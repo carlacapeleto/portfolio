@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuidades</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@50&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <center>
+        <table cellpadding='10' class="menu">
+            <thead>
+                <td>
+                    <h3><a href='index.html'>
+                            Voltar ao Início
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='autoav.html'>
+                            Auto-Avaliação
+                        </a></h3>
+                </td>
+
+                <td>
+                    <h3><a href='amortizacao.html'>
+                            Amortização
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='matriz.html'>
+                            Matrizes
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='determinantes.html'>
+                            Determinantes
+                        </a></h3>
+                </td>
+            </thead>
+        </table>
+    </center>
+    <hr>
+    <div>
+
+    </div>
+    <h1>Exercícios sobre Matrizes</h1>
+    <div class="ddiv">
+        <h2>Exercicio 1</h2>
+        <div class="image-container">
+            <img src="img/73.jpg"></div>
+            <p>Neste exercício, como é muito similar ao resolvido anteriormente não houve grandes dificuldades. </p>
+            <ol>
+                <li>Primeiramente, fiz as multiplicações escalares</li>
+                <li>Depois a subtração</li>
+            </ol>
+
+      <h2>Exercicio 2</h2>
+      <div class="image-container">
+        <img src="img/74.jpg"></div>
+        <ol>
+            <li>Primeiro transformei a matriz A em transposta.</li>
+            <li>Depois somei a matriz At e a A obtendo um resultado</li>
+        </ol>
+        <h2>
+            Exercício 2- A
+        </h2>
+        <div class="image-container">
+            <img src="img/75.jpg"></div>
+            <ol>
+                <li>Este exercício é simples, apenas realizamos as multiplicações</li>
+            </ol>
+            <h2>Exercicio 6</h2>
+            <div class="image-container">
+                <img src="img/76.jpg"></div>
+                <p>Este problema é fácil de resolver;</p>
+                <ol>
+                    <li>Começamos multiplicando os valores de cada mes, e dos produtos separados</li>
+                    <li>E então, organizamos as matrizes</li>
+                </ol>
+    </div>
+
+    <hr>
+    <br>
+    <br>
+
+
+
+
+    <center>
+        <h1> <a href="anuidadeex.html">Exercícios sobre anuidade</a></h>
+    </center>
+    <center>
+        <table cellpadding='10' class="menu">
+            <thead>
+                <td>
+                    <h3><a href='index.html'>
+                            Voltar ao Início
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='autoav.html'>
+                            Auto-Avaliação
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='anuidades.html'>
+                            Anuidades
+                        </a></h3>
+                </td>
+
+                <td>
+                    <h3><a href='amortizacao.html'>
+                            Amortização
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='matriz.html'>
+                            Matrizes
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='determinantes.html'>
+                            Determinantes
+                        </a></h3>
+                </td>
+            </thead>
+        </table>
+    </center>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggleLinks = document.querySelectorAll(".toggle-link");
+            toggleLinks.forEach(link => {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const target = document.getElementById(this.dataset.target);
+                    if (target.style.display === "none" || target.style.display === "") {
+                        target.style.display = "block";
+                    } else {
+                        target.style.display = "none";
+                    }
+                });
+            });
+
+            const closeAllButton = document.getElementById("close-all");
+            closeAllButton.addEventListener("click", function () {
+                const allContents = document.querySelectorAll(".toggle-content");
+                allContents.forEach(content => {
+                    content.style.display = "none";
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

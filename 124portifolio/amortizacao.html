@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amortização</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@50&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+<body>
+
+    <body>
+        <center>
+            <table cellpadding='10' class="menu">
+                <thead>
+                    <td>
+                        <h3><a href='index.html'>
+                                Voltar ao Início
+                            </a></h3>
+                    </td>
+                    <td>
+                        <h3><a href='autoav.html'>
+                                Auto-Avaliação
+                            </a></h3>
+                    </td>
+            
+                
+                    <td>
+                        <h3><a href='anuidades.html'>
+                                Anuidades
+                            </a></h3>
+                    </td>
+                    <td>
+                        <h3><a href='matriz.html'>
+                                Matrizes
+                            </a></h3>
+                    </td>
+                    <td>
+                        <h3><a href='determinantes.html'>
+                                Determinantes
+                            </a></h3>
+                    </td>
+                </thead>
+            </table>
+        </center>
+        <hr>
+        <h1>Amortização</h1>
+        </div>
+
+        <div class="ddiv">
+            <br>
+            <p align="center">Amortização é o sistema de pagamentos utilizados para quitar um dívida, valor emprestado,
+                compra
+                parcelada etc. O exemplo mais comum são os empréstimos, onde o banco empresta uma quantia de dinheiro,
+                geralmente alta, e o cliente tem um certo número de parcelas para pagar, nessas parcelas geralmente é
+                adicionado uma porcentagem de juros</p>
+            <br>
+
+            <ul>
+                <li>C → Capital ou valor presente do empréstimo</li>
+                <li>M → Montante ou valor futuro da capitalização</li>
+                <li>P → Prestações pagas ou valores depositados</li>
+                <li>i → Taxa de juros</li>
+                <li>n → Prazo</li>
+            </ul>
+            <div class="image-container">
+                <img src="img/17.jpg">
+            </div>
+            <p>Na amortização as letras correspondem aos mesmos tipos de valores que a Anuidade. Segue Exemplos</p>
+
+            <h2>Exemplo 4</h2>
+            <p>O pagamento de um eletrodoméstico será feito em 6 parcelas iguais a R$ 230,00, sem entrada e com juros.
+                Sabendo que a taxa de juros usada foi de 3,5% ao mês, calcule o preço original do produto.</p>
+            <div>
+                <a href="#" class="toggle-link" data-target="content1">Mostrar resolução exercício 4</a>
+                <div id="content1" class="toggle-content">
+
+                    <ul>
+
+                        <li>Como falado anteriormente, primeiro devemos identificar os valores.</li>
+                        <li>Número de parecelas (n): 6: 230,00</li>
+                        <li>Taxa de juro mensal(i):3,5 ou 0,035</li>
+                    </ul>
+                    <p>Depois disso vamos substituir os valores na fórmula</p>
+                    <div class="image-container">
+                        <img src="img/18.jpg">
+                    </div>
+                    <p>Primeiro vamos calcular oque está dentro do parênteses
+                        <img src="img/18.png" alt="Descrição da imagem" class="inline-image">
+                        que vai resultar em <img src="img/19.png" alt="Descrição da imagem" class="inline-image">
+                    </p>
+                    <ul></ul>
+                    <li>Depos disso precisamos multiplicar o resultado pelo exponencial de -6 <img src="img/20.png"
+                            alt="Descrição da imagem" class="inline-image"> Que vai nos resultar em aproximadamente
+                        <b>0,8340</b>
+                    </li>
+                    <br>
+
+                    <li>Agora vamos calcular <img src="img/21.png" alt="Descrição da imagem" class="inline-image">Vamos
+                        substituir o <img src="img/22.png" alt="Descrição da imagem" class="inline-image"> pelo valor
+                        obtido no cálculo anterior: <img src="img/23.png" alt="Descrição da imagem"
+                            class="inline-image"></li>
+                    <br>
+
+                    <li>Agora vamos substituir os valores na fração<img src="img/25.png" alt="Descrição da imagem"
+                            class="inline-image"> </li>
+                    <br>
+
+
+                    <br>
+                    <li>Agora, podemos passar para o último passo do cálculo, que é multiplicar o valor das
+                        parcelas pelo resultado do cálculos anteriores <img src="img/27.png" alt="Descrição da imagem"
+                            class="inline-image"></li>
+                    </ul>
+                    <p>O que vai nos resultar no resultado total que é: <b>1090,87</b></p>
+                    <h4>Lembrando: Este resultado é um cálculo aproximado, então ele pode receber diversos resultados,
+                        então
+                        pode sim ter algumas variações</h4>
+                </div>
+                <h2>Exemplo 5</h2>
+                <p>Fiz um empréstimo de R$50.000,00, com taxa de juros de 2,1% ao mes, para pagar em 24 parcelas fixas
+                    mensais. Qual o valor de cada prestação?</p>
+                <a href="#" class="toggle-link" data-target="content2">Mostrar resolução exemplo  5</a>
+                <div id="content2" class="toggle-content">
+                    <p>Nesta questão precisamos descobrir o valor de cada prestação:</p>
+                    <p>Vamos começar identificando os valores</p>
+                    <p>C=50.000</p>
+                    <p>i=2,1% - 0,021</p>
+                    <p>n= 24 meses</p>
+                    <p>P= ?</p>
+                    <p>Vamos seguir com a mesma fórmula da questão anterior:</p>
+                    <div class="image-container"><img src="img/28.jpg"></div>
+                    <p>Agora vamos substituir os valores</p>
+                    <div class="image-container"><img src="img/29.jpg"></div>
+                    <p>Começamos calculando o que está dentro do parênteses, vamos aproveitar e resolver a potência
+                        junto<img src="img/30.png" alt="Descrição da imagem" class="inline-image"></p>
+                    <p>Agora precisamos ,ultiplicar o valor da taxa de juros pelo resultado anterior<img
+                            src="img/30.png" alt="Descrição da imagem" class="inline-image"></p>
+                    <p>Agora vamos pegar o resultado do primeiro cálculo e diminuir 1
+                        <img src="img/31.png" alt="Descrição da imagem" class="inline-image">
+                    </p>
+                    <p>Agora pegamos os valores 0,033523 e 0,5963 e dividimos da seguinte forma:<img src="img/32.png"
+                            alt="Descrição da imagem" class="inline-image"></p>
+
+                    <br>
+                    <p>Então podemos passar para o último cálculo, que é multiplicar o valor total do empréstimo
+                        (50.000) com 0,0562. Que vai nos resultar em 2.810</p>
+                    <h4>Sendo assim o valor pago em cada parcela é de <b><i>R$2.810,00</i></b></h4>
+                </div>
+
+
+                
+
+                <button id="close-all">Fechar</button>
+                <center>
+                    <h1>  <a href="anuidadeex.html">Exercícios sobre anuidade</a></h>
+                 </center>
+                <center>
+                    <table cellpadding='10' class="menu">
+                        <thead>
+                            <td>
+                                <h3><a href='index.html'>
+                                        Voltar ao Início
+                                    </a></h3>
+                            </td>
+                            <td>
+                                <h3><a href='autoav.html'>
+                                        Auto-Avaliação
+                                    </a></h3>
+                            </td>
+                    
+                            <td>
+                                <h3><a href='anuidades.html'>
+                                        Anuidades
+                                    </a></h3>
+                            </td>
+                            <td>
+                                <h3><a href='matriz.html'>
+                                        Matrizes
+                                    </a></h3>
+                            </td>
+                            <td>
+                                <h3><a href='determinantes.html'>
+                                        Determinantes
+                                    </a></h3>
+                            </td>
+                        </thead>
+                    </table>
+                </center>
+                <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        // Oculta o conteúdo inicial
+                        var contents = document.querySelectorAll('.toggle-content');
+                        contents.forEach(function (content) {
+                            content.style.display = 'none';
+                        });
+
+                        // Adiciona event listeners aos links
+                        var links = document.querySelectorAll('.toggle-link');
+                        links.forEach(function (link) {
+                            link.addEventListener('click', function (event) {
+                                event.preventDefault();
+                                var targetId = this.getAttribute('data-target');
+                                var content = document.getElementById(targetId);
+                                if (content.style.display === 'none' || content.style.display === '') {
+                                    content.style.display = 'block';
+                                } else {
+                                    content.style.display = 'none';
+                                }
+                            });
+                        });
+
+                        // Adiciona event listener ao botão "Fechar"
+                        document.getElementById('close-all').addEventListener('click', function () {
+                            contents.forEach(function (content) {
+                                content.style.display = 'none';
+                            });
+                        });
+                    });
+                </script>
+    </body>
+
+</html>

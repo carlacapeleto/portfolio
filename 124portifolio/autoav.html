@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuidades</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@50&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <center>
+        <table cellpadding='10' class="menu">
+            <thead>
+                <td>
+                    <h3><a href='index.html'>
+                            Voltar ao Início
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='autoav.html'>
+                            Auto-Avaliação
+                        </a></h3>
+                </td>
+
+                <td>
+                    <h3><a href='amortizacao.html'>
+                            Amortização
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='matriz.html'>
+                            Matrizes
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='determinantes.html'>
+                            Determinantes
+                        </a></h3>
+                </td>
+            </thead>
+        </table>
+    </center>
+    <hr>
+    <div>
+
+    </div>
+
+    <div class="ddiv">
+        <p>Este trimestre, até que me esforcei, porém deveria ter me esforçado mais, mesmo sendo a favor da greve,
+            consfesso que a parada deu uma prejudicada no meu rendimento, principlamente por tem um pouco mais de
+            dificuldade em exatas. Não gostei do meu rendimento na prova, acho que deveria ter estudado e colocado mais
+            coisas no resumo.
+            <br>
+            Porém, tirando esses fatores gostei do conteúdo e gostei também de como ele foi aplicado, houveram algumas
+            dúvidas pontuais mas que com um pouco de pesquisa foram sanadas rapidamente.
+            <br>
+            Quanto a entrega do portifólio foi descuido meu, anoitei a data errada e acabei me confundindo na hora de enviar
+            <br>
+            Espero melhorar meu rendimento para o próximo trimestre
+        </p>
+    </div>
+
+    <hr>
+    <br>
+    <br>
+
+
+
+
+    <center>
+        <h1> <a href="anuidadeex.html">Exercícios sobre anuidade</a></h>
+    </center>
+    <center>
+        <table cellpadding='10' class="menu">
+            <thead>
+                <td>
+                    <h3><a href='index.html'>
+                            Voltar ao Início
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='autoav.html'>
+                            Auto-Avaliação
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='anuidades.html'>
+                            Anuidades
+                        </a></h3>
+                </td>
+
+                <td>
+                    <h3><a href='amortizacao.html'>
+                            Amortização
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='matriz.html'>
+                            Matrizes
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='determinantes.html'>
+                            Determinantes
+                        </a></h3>
+                </td>
+            </thead>
+        </table>
+    </center>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggleLinks = document.querySelectorAll(".toggle-link");
+            toggleLinks.forEach(link => {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const target = document.getElementById(this.dataset.target);
+                    if (target.style.display === "none" || target.style.display === "") {
+                        target.style.display = "block";
+                    } else {
+                        target.style.display = "none";
+                    }
+                });
+            });
+
+            const closeAllButton = document.getElementById("close-all");
+            closeAllButton.addEventListener("click", function () {
+                const allContents = document.querySelectorAll(".toggle-content");
+                allContents.forEach(content => {
+                    content.style.display = "none";
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

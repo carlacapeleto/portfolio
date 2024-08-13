@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuidades</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@50&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <center>
+        <table cellpadding='10' class="menu">
+            <thead>
+                <td>
+                    <h3><a href='index.html'>
+                            Voltar ao Início
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='autoav.html'>
+                            Auto-Avaliação
+                        </a></h3>
+                </td>
+
+                <td>
+                    <h3><a href='amortizacao.html'>
+                            Amortização
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='matriz.html'>
+                            Matrizes
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='determinantes.html'>
+                            Determinantes
+                        </a></h3>
+                </td>
+            </thead>
+        </table>
+    </center>
+    <hr>
+    <div>
+
+    </div>
+    <h1>Exercícios sobre anuidades</h1>
+    <div class="ddiv">
+        <h2>Exercício</h2>
+        <div class="image-container">
+            <img src="img/71.jpg">
+        </div>
+        <p>Os exercícios de Anuidade são os mais faceis na minha opinião, basta substituir os valores na fórmula. Neste
+            em específico precisavamos descobrir o tempo</p>
+        <ol>
+            <li>Primeiramente, substitui os valores na fórmula</li>
+            <li>resolvi o que estava dentro dos parenteses</li>
+            <li>passei o T para frente, resultando em uma divisão que nos deu o resultado</li>
+        </ol>
+
+        <h2>Exercicio </h2>
+        <div class="image-container">
+            <img src="img/72.jpg">
+        </div>
+        <p>Como falei anteriormente, estes exercício são faceis de resolver e eu não tive nenhuma dificuldade. Neste
+            exercício, precisamos descobrir o montante no fim de 10 meses</p>
+            <ol>
+                <li>Primeiro resolvemos oque está dentro dos parênteses </li>
+                <li>Depois basta multiplicar o valor de dentro dos parenteses pelo valor C</li>
+                <li></li>
+            </ol>
+
+            <hr>
+            <br>
+            <br>
+
+
+
+
+            <center>
+
+            </center>
+            <center>
+                <table cellpadding='10' class="menu">
+                    <thead>
+                        <td>
+                            <h3><a href='index.html'>
+                                    Voltar ao Início
+                                </a></h3>
+                        </td>
+                        <td>
+                            <h3><a href='autoav.html'>
+                                    Auto-Avaliação
+                                </a></h3>
+                        </td>
+                        <td>
+                            <h3><a href='anuidades.html'>
+                                    Anuidades
+                                </a></h3>
+                        </td>
+
+                        <td>
+                            <h3><a href='amortizacao.html'>
+                                    Amortização
+                                </a></h3>
+                        </td>
+                        <td>
+                            <h3><a href='matriz.html'>
+                                    Matrizes
+                                </a></h3>
+                        </td>
+                        <td>
+                            <h3><a href='determinantes.html'>
+                                    Determinantes
+                                </a></h3>
+                        </td>
+                    </thead>
+                </table>
+            </center>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const toggleLinks = document.querySelectorAll(".toggle-link");
+                    toggleLinks.forEach(link => {
+                        link.addEventListener("click", function (event) {
+                            event.preventDefault();
+                            const target = document.getElementById(this.dataset.target);
+                            if (target.style.display === "none" || target.style.display === "") {
+                                target.style.display = "block";
+                            } else {
+                                target.style.display = "none";
+                            }
+                        });
+                    });
+
+                    const closeAllButton = document.getElementById("close-all");
+                    closeAllButton.addEventListener("click", function () {
+                        const allContents = document.querySelectorAll(".toggle-content");
+                        allContents.forEach(content => {
+                            content.style.display = "none";
+                        });
+                    });
+                });
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuidades</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@50&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <center>
+        <table cellpadding='10' class="menu">
+            <thead>
+                <td>
+                    <h3><a href='index.html'>
+                            Voltar ao Início
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='autoav.html'>
+                            Auto-Avaliação
+                        </a></h3>
+                </td>
+
+                <td>
+                    <h3><a href='amortizacao.html'>
+                            Amortização
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='matriz.html'>
+                            Matrizes
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='determinantes.html'>
+                            Determinantes
+                        </a></h3>
+                </td>
+            </thead>
+        </table>
+    </center>
+    <hr>
+    <div>
+        <h1>Determinantes</h1>
+
+    </div>
+
+    <div class="ddiv">
+        <p>Os determinantes são números associados a matrizes quadradas (matrizes com o mesmo número de linhas e
+            colunas). Eles nos ajudam a resolver sistemas de equações lineares, encontrar áreas e volumes, e muitas
+            outras aplicações na matemática e engenharia.</p>
+        <h3>Como calcular determinantes</h3>
+        <h3>Matriz 1x1:<p>Em matrizes 1x1 que só possuem um elemento, o determinante é o próprio elemento</p>
+        </h3>
+        <img src="img/57.png">
+
+        <h3>Matriz 2x2:<p>Em matrizes 2x2, é preciso fazer uma multiplicação cruzada, depois disso, fazer uma subtração
+                dos resultados</p>
+        </h3>
+        <img src="img/58.png">
+
+        <h3>Matriz 3x3:<p>Em matrizes 3x3, vamos precisar utilizar a regra de Sarrus</p>
+        </h3>
+        <img src="img/59.jpg" width="350" height="200">
+        <p>Ou seja, vamos repetir as duas primeiras linhas da matriz ao lado direito dela</p>
+        <div class="containerimagem">
+            <img src="img/60.png" alt="Descrição da imagem" width="250">
+            <p>Com as colunas repetidas ao lado direito, vamos multiplicas os valores das diagonais principais e depois
+                somá-los, como mostra na imagem</p>
+            <br>
+        </div>
+        <div class="containerimagem">
+            <img src="img/61.png" alt="Descrição da imagem" width="250">
+            <p>Depois vamos somar os elementos obtidos pela multiplicação das diagonais principais</p>
+            <br>
+        </div>
+        <div class="containerimagem">
+            <img src="img/62.png" alt="Descrição da imagem" width="250">
+            <p>Agora vamos fazer a multiplicação das diagonais secundárias</p>
+            <br>
+        </div>
+        <div class="containerimagem">
+            <img src="img/63.png" alt="Descrição da imagem" width="250">
+            <p>Somas os valores obtidos:</p>
+            <br>
+        </div>
+        <div class="containerimagem">
+            <img src="img/64.png" alt="Descrição da imagem" width="250">
+            <p>Agora, vamos subtrair a soma da diagonal secundaria da diagonal principal</p>
+            <br>
+        </div>
+        <p>Por fim, vamos obter o resultado, No caso o determinante desta matriz é 72</p>
+
+        <h3>De uma Matiz maior que 3x3:<p>Para matrizes de ordem maior que 3, utilizamos métodos como o Teorema de
+                Laplace e a Regra de Chió. A Regra de Chió transforma a matriz em uma matriz de ordem menor até ser
+                possível calcular o determinante.</p>
+
+            <h2>Exemplo 1</h2>
+            <p>Calcule o determinante de uma raiz 2x2</p>
+            <a href="#" class="toggle-link" data-target="content1">Mostrar resolução exemplo 1</a>
+            <div id="content1" class="toggle-content">
+                <div class="image-container">
+                    <img src="img/65.jpg">
+                </div>
+                <ul>
+                    <li>Primeiro identificamos realizamos as multiplicações cruzadas = 4*3 e 3*6</li>
+                    <li>Com os resultados obtidos fizemos a subtração 12-18</li>
+                    <li>Então obtivemos o resultado de -6</li>
+                </ul>
+            </div>
+            <h2>Exemplo 2</h2>
+            <p>Calcule o determinante de uma matriz 3x3 usando a regra de Sarrus</p>
+            <a href="#" class="toggle-link" data-target="content2">Mostrar Resolução exemplo 2</a>
+            <div id="content2" class="toggle-content">
+                <div class="image-container">
+                    <img src="img/66.jpg">
+                </div>
+                <ul>
+                    <li>Primeiro identificamos as diagonais principais e as secundárias</li>
+                    <li>Depois realizamos as multiplicações da diagonal principal</li>
+                    <li>Depois as multiplicações da diagonal secundária</li>
+                    <li>Somamos os resultados das multiplicações das diagonais principal</li>
+                    <li>Repetimos o processo na diagonal secundária</li>
+                    <li>Por fim, subtraimos o resultado da diagonal principal 225, com o resultado da diagonal
+                        secundária 225.</li>
+                    <li>Então obtivemos o resultado de 0, sendo assim o determinante desta matiz é 0</li>
+                </ul>
+            </div>
+            <h2>Exemplo 3</h2>
+            <p>Calcule o determinante de uma matriz maior que 3x3 usando a regra de Chio</p>
+            <a href="#" class="toggle-link" data-target="content1">Mostrar resolução exemplo 3</a>
+            <div id="content1" class="toggle-content">
+                <div class="image-container">
+                    <img src="img/67.jpg">
+                </div>
+                <ul>
+                    <li>Começamos aplicando a regra de chio suprimindo a primeira linha e a primeira coluna</li>
+                    <li> Ainda aplicando a regra de chio,pegamos primeiro elemento da matriz 3x3 que restou e vamos
+                        diminuir do numero correspondente da linha suprimida e multiplica-lo pelo número da coluna
+                        suprimida. Nesse caso 1(a1 da matriz 3x3 restante) - 1(elemento da linha suprimida) * 2(elemento
+                        da coluna suprimida)</li>
+                        <li>Realizando isso em todos elementos e resolvendo as multiplicações vai nos resultar em uma nova matriz</li>
+                        <li>Agora com uma matriz 3x3 podemos aplicar sarrus</li>
+                        <li>Identificamos as diagonais principais e realizamos as multiplicações e a soma nos resultados</li>
+                        <li>Repetimos o processo nas diagonais secundárias</li>
+                        <li>Subtraimos para obter o resultado, que nesse caso é 11</li>
+                </ul>
+
+            </div>
+
+
+            <button id="close-all">Fechar Todos</button>
+
+    </div>
+    <hr>
+    <br>
+    <br>
+
+
+
+    </div>
+    <center>
+        <h1> <a href="anuidadeex.html">Exercícios sobre Determinantes</a></h>
+    </center>
+    <center>
+        <table cellpadding='10' class="menu">
+            <thead>
+                <td>
+                    <h3><a href='index.html'>
+                            Voltar ao Início
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='autoav.html'>
+                            Auto-Avaliação
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='anuidades.html'>
+                            Anuidades
+                        </a></h3>
+                </td>
+
+                <td>
+                    <h3><a href='amortizacao.html'>
+                            Amortização
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='matriz.html'>
+                            Matrizes
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='determinantes.html'>
+                            Determinantes
+                        </a></h3>
+                </td>
+            </thead>
+        </table>
+    </center>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggleLinks = document.querySelectorAll(".toggle-link");
+            toggleLinks.forEach(link => {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const target = document.getElementById(this.dataset.target);
+                    if (target.style.display === "none" || target.style.display === "") {
+                        target.style.display = "block";
+                    } else {
+                        target.style.display = "none";
+                    }
+                });
+            });
+
+            const closeAllButton = document.getElementById("close-all");
+            closeAllButton.addEventListener("click", function () {
+                const allContents = document.querySelectorAll(".toggle-content");
+                allContents.forEach(content => {
+                    content.style.display = "none";
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

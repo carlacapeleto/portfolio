@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuidades</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@50&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <center>
+        <table cellpadding='10' class="menu">
+            <thead>
+                <td>
+                    <h3><a href='index.html'>
+                            Voltar ao Início
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='autoav.html'>
+                            Auto-Avaliação
+                        </a></h3>
+                </td>
+
+                <td>
+                    <h3><a href='amortizacao.html'>
+                            Amortização
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='matriz.html'>
+                            Matrizes
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='determinantes.html'>
+                            Determinantes
+                        </a></h3>
+                </td>
+            </thead>
+        </table>
+    </center>
+    <hr>
+    <div>
+
+    </div>
+    <h1>Exercícios sobre determinantes</h1>
+    <div class="ddiv">
+
+        <p>Agora vamos discutir alguns exercícios propostos pela professora, alguns foram faceis, alguns houve
+            dificuldade e outros considerei muito difíceis.</p>
+        <h2>Exercício 1</h2>
+        <div class="image-container">
+            <img src="img/68.jpg">
+        </div>
+        <p>O primeiro exercício era bem objetivo, mandava calcular os determinantes de uma matriz 2x2, ou seja apenas
+            multiplicar cruzado e subtrair os resultados, resolvi de forma rapida e sem dificuldades, da mesma maneira
+            que resolvi o 2 e o 3, que por esse motivo não coloquei no portifólio </p>
+            <br>
+            <h3>Passo a passo do exercício</h3>
+            <ol>
+                <li>Identificar as diagonais principais e secundarias</li>
+                <li>Fazer as multiplicações</li>
+                <li>Fazer as somas</li>
+                <li>Fazer as subtrações e obter os resultados</li>
+            </ol>
+        <h2>Exercício 4</h2>
+        <div class="image-container">
+            <img src="img/69.jpg">
+        </div>
+        <p>Neste exercício houve um pouco de dificuldade na resolução, o problema começou em compreender e interpretar o
+            enunciado e também em resolver. Para conseguir resolver tive que recorrer a ajuda de meus amigos, onde eles
+            me explicaram como funcionava a montagem desse tipo de cálculo. Depos disso, consegui resolver sem grandes
+            dificuldades e consegui interpretar outros exercícios com a mesma proposta;</p>
+            <ol>
+                <li>Primeiro resolvi a multiplicação escalar 2B</li>
+                <li>Com o resultado obtido, realizei a subtração de A - 2B</li>
+                <li>Por fim obti a matriz resultante</li>
+            </ol>
+        <h2>Exercício 6</h2>
+        <div class="image-container">
+            <img src="img/70.jpg">
+        </div>
+        <p>Neste exercício houve muita dificuldade, novamente na compreensção, espessificamente o que os "X" estavam
+            fazendo no meio, precisei ler muito sobre matrizes e pesquisar video aula sobre. No dia em que tentei
+            resolver pela primeira vez, escrevi que não conseguiria terminar o calculo pois as matrizes eram de ordem
+            diferentes, no fim do conteúdo entendi que bastava aplicar a regra de chio.</p>
+            <ol>
+                <li>Primeiro identifiquei que x ao quadrado é a mesma coisa que x*x, então multipliquei a matriz x por ela mesma</li>
+                <li>Depois, multipliquei a raiz de y por escalar 2</li>
+                <li>Parei o exercício por aqui pois os resultados foram de uma matriz 2x2 e outra 4x4</li>
+            </ol>
+            <br>
+            Os demais exercícios consegui resolver de maneira clara, sem grandes dúvidas, por isso resolvi não colocalos aqui
+    </div>
+
+    <hr>
+    <br>
+    <br>
+
+
+
+
+    <center>
+        <h1> <a href="determinantesex.html">Exercícios sobre determinante</a></h>
+    </center>
+    <center>
+        <table cellpadding='10' class="menu">
+            <thead>
+                <td>
+                    <h3><a href='index.html'>
+                            Voltar ao Início
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='autoav.html'>
+                            Auto-Avaliação
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='anuidades.html'>
+                            Anuidades
+                        </a></h3>
+                </td>
+
+                <td>
+                    <h3><a href='amortizacao.html'>
+                            Amortização
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='matriz.html'>
+                            Matrizes
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='determinantes.html'>
+                            Determinantes
+                        </a></h3>
+                </td>
+            </thead>
+        </table>
+    </center>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggleLinks = document.querySelectorAll(".toggle-link");
+            toggleLinks.forEach(link => {
+                link.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    const target = document.getElementById(this.dataset.target);
+                    if (target.style.display === "none" || target.style.display === "") {
+                        target.style.display = "block";
+                    } else {
+                        target.style.display = "none";
+                    }
+                });
+            });
+
+            const closeAllButton = document.getElementById("close-all");
+            closeAllButton.addEventListener("click", function () {
+                const allContents = document.querySelectorAll(".toggle-content");
+                allContents.forEach(content => {
+                    content.style.display = "none";
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

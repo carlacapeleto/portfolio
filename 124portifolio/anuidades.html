@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuidades</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@50&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <center>
+        <table cellpadding='10' class="menu">
+            <thead>
+                <td>
+                    <h3><a href='index.html'>
+                            Voltar ao Início
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='autoav.html'>
+                            Auto-Avaliação
+                        </a></h3>
+                </td>
+        
+                <td>
+                    <h3><a href='amortizacao.html'>
+                            Amortização
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='matriz.html'>
+                            Matrizes
+                        </a></h3>
+                </td>
+                <td>
+                    <h3><a href='determinantes.html'>
+                            Determinantes
+                        </a></h3>
+                </td>
+            </thead>
+        </table>
+    </center>
+    <hr>
+    <div>
+        <h1>Anuidades</h1>
+    </div>
+
+    <div class="ddiv">
+        <br>
+        <p align="center">Anuidade é uma série de pagamentos ou depósitos realizados de forma regular de tempo.</p>
+        <br>
+        <p align="center">Para conseguir realizar cálculos e compreender como funciona Anuidades precisamos saber
+            algumas notações</p>
+        <ul>
+            <li>C → Capital ou valor presente do empréstimo</li>
+            <li>M → Montante ou valor futuro da capitalização</li>
+            <li>P → Prestações pagas ou valores depositados</li>
+            <li>i → Taxa de juros</li>
+            <li>n → Prazo</li>
+        </ul>
+        <h1 align="center">Sistemas de Capitalização</h1>
+        <p align="center">O Sistema de capitalização é a parte que envolve a realização de depósitos de forma sucessiva
+            com objetivo de acumular uma certa quantia de dinheiro no futuro, tudo isso, baseado na taxa de juro;
+        </p>
+
+        <h2>Exemplo 1</h2>
+        <p>Uma pessoa deposita mensalmente R$ 100,00 em uma conta poupança que rende juros de 1,2% ao mês. Qual será o
+            saldo da conta imediatamente após o quinto depósito?</p>
+        <a href="#" class="toggle-link" data-target="content1">Mostrar resolução exemplo  1</a>
+        <div id="content1" class="toggle-content">
+            <p>Para resolver este tipo de questão, nos baseamos que cada depósito vai capitalizar a cada mês, sendo
+                assim:</p>
+            <ul>
+                <li>P1 = 100</li>
+                <li>P2 = 100</li>
+                <li>P3 = 100</li>
+                <li>P4 = 100</li>
+                <li>P5 = 100</li>
+            </ul>
+       
+            <p>Neste caso, conseguimos simplificar e utilizar a fórmula de soma de uma PG</p>
+            <img src="img/1.png" alt="Fórmula de PG">
+            <p>onde:</p>
+            <ul>
+                <li>A1 = Ou seja, o primeiro termo corresponde a P, que dentro de anuidade corresponde às Prestações
+                    pagas ou os valores depositados</li>
+                <li>Q = corresponde à razão de 1 + n, ou seja, 1+prazo</li>
+            </ul>
+
+            <br>
+            <p>Existe duas maneiras de calcular, com e sem a fórmula de PG, abaixo resolução em ambas as fórmulas:</p>
+            <h3>Com a Fórmula:</h3>
+            <ul>
+                <p>Primeiro, substituímos os valores na fórmula de PG</p>
+                <img src="img/2.png" alt="Substituição na fórmula">
+                <br>
+
+                <li>Depois devemos calcular os termos da fórmula</li>
+                <img src="img/3.png" alt="Cálculo dos termos">
+                <br>
+                <li>Depois é necessário dividir o resultado da equação anterior por 0,012</li>
+                <img src="img/4.png" alt="Divisão">
+                <br>
+                <li>E então é preciso multiplicar o resultado pelo valor do depósito mensal (100,00)</li>
+                <img src="img/5.png" alt="Multiplicação">
+                <li>Sendo assim, o saldo da conta após o quinto depósito será de aproximadamente R$514,17</li>
+            </ul>
+            <h3>Sem a Fórmula:</h3>
+            <ul>
+                <li>Para calcular sem a fórmula de Progressão Geométrica vamos utilizar uma fórmula própria da Anuidade,
+                    onde:</li>
+                <li>M é o montante acumulado</li>
+                <li>P é o valor do depósito</li>
+                <li>i é a taxa de juros</li>
+                <li>t é o número de meses que o depósito vai ser capitalizado</li>
+                <img src="img/7.png" alt="Fórmula de Anuidade">
+                <li>O primeiro passo é substituir os valores na fórmula:</li>
+                <img src="img/6.png" alt="Substituição de valores">
+                <li>Depois vamos somar os valores dentro dos parênteses:</li>
+                <img src="img/8.png" alt="Soma dos valores">
+                <li>Então resolvemos o exponencial:</li>
+                <img src="img/9.png" alt="Resolução do exponencial">
+                <li>E por fim a multiplicação, que vai nos render o resultado da capitalização do primeiro depósito</li>
+                <img src="img/10.png" alt="Multiplicação final">
+                <br>
+                <br>
+                <p>Para saber a Capitalização do Segundo depósito faremos o mesmo cálculo, porém ao invés de utilizar o
+                    número '4' no expoente, utilizaremos o '3' que refere-se aos três meses que o valor irá capitalizar
+                    na conta</p>
+                <img src="img/11.png" alt="Cálculo do segundo depósito">
+                <p>No terceiro mês, o cálculo será o mesmo, novamente apenas substituindo o expoente '3' pelo expoente
+                    '2'</p>
+                <img src="img/12.png" alt="Cálculo do terceiro depósito">
+                <p>E novamente o mesmo processo no Quarto depósito</p>
+                <img src="img/13.png" alt="Cálculo do quarto depósito">
+                <p>O quinto depósito ficará unicamente no valor do depósito, afinal ele não vai ficar "parado" na conta,
+                    sendo assim, não vai ter um rendimento, por isso vamos apenas soma-lo.</p>
+                <li>Com todos os montantes, vamos somá-los para ter o rendimento total</li>
+                <img src="img/14.png" alt="Soma dos montantes">
+                <p>Agora Vamos substituir os valores</p>
+                <p>M1 = 104,86</p>
+                <p>M2 = 103,63</p>
+                <p>M3 = 102,42</p>
+                <p>M4 = 101,20</p>
+                <p>M5 = 100</p>
+                <img src="img/15.png" alt="Substituição dos valores">
+                <p>Podemos notar uma diferença entre o cálculo com a forma da PG e com a forma de anuidade, isso se dá
+                    pelo fato do arredondamento, na PG ocorre um arredondamento (1,012)^5, onde o resultado exato seria
+                    1,0616620, porém é arredondado para 1,617 para facilitar o cálculo manual, o que acaba resultando em
+                    uma diferença entre os dois métodos, porém, mesmo assim, ambas continuam sendo opções.</p>
+            </ul>
+        </div>
+
+        <hr>
+        <h2>Exemplo 2</h2>
+        <p>Uma pessoa deposita, mensalmente, a quantia de R$1.500,00, em ima conta poupança que rende juros de 0,6% ao mês. Qual será o saldo da conta imediatamente após o oitavo mês?</p>
+        <a href="#" class="toggle-link" data-target="content2">Mostrar Resolução exemplo 2</a>
+        <div id="content2" class="toggle-content">
+            <div class="image-container">
+                <img src="img/16.jpg" alt="Descrição da Imagem">
+                </ul>
+            </div>
+
+            <p>Começamos montando a fórmula e adicionando os valores a ela:</p>
+            <p>Neste caso, os valores são:</p>
+            <ul>
+                <li>M= Valor final após o oitavo mes </li>
+                <li>P= Depósito mensal</li>
+                <li>i = a taxa de juro mensal</li>
+                <li>t = tempo ou número de depósito</li>
+                <p>Sendo Assim:</p>
+                <p>M=*</p>
+                <p>P=1.500,00</p>
+                <p>i= 0,6</p>
+                <P>T= 8</P>
+                <ul>
+                    <li>Depois que os valores foram substituídos, podemos começar a resolver os cálculos.</li>
+                    <li>Vamos começar resolvendo o que está dentro dos Parênteses - (1+0,006) que vai nos resultar em
+                        1,006^8-1 /0,06</li>
+                    <li>Isto irá gerar o resultado de 8,17. </li>
+                    <li>Agora nos resulta em uma Multiplicação: <b>M= 1.500 * 8,17</b></li>
+                    <li>Sendo assim, obtemos o resultado de 12.255,00, que no caso será o valor após o Oitavo depósito
+                    </li>
+                </ul>
+                <hr>
+               
+                <button id="close-all">Fechar Todos</button>
+        
+                </div>
+                <hr>
+                <br>
+                <br>
+                
+
+
+        </div>
+     <center>
+        <h1>  <a href="anuidadeex.html">Exercícios sobre anuidade</a></h>
+     </center>
+        <center>
+            <table cellpadding='10' class="menu">
+                <thead>
+                    <td>
+                        <h3><a href='index.html'>
+                                Voltar ao Início
+                            </a></h3>
+                    </td>
+                    <td>
+                        <h3><a href='autoav.html'>
+                                Auto-Avaliação
+                            </a></h3>
+                    </td>
+                    <td>
+                        <h3><a href='anuidades.html'>
+                                Anuidades
+                            </a></h3>
+                    </td>
+                    
+                    <td>
+                        <h3><a href='amortizacao.html'>
+                                Amortização
+                            </a></h3>
+                    </td>
+                    <td>
+                        <h3><a href='matriz.html'>
+                                Matrizes
+                            </a></h3>
+                    </td>
+                    <td>
+                        <h3><a href='determinantes.html'>
+                                Determinantes
+                            </a></h3>
+                    </td>
+                </thead>
+            </table>
+        </center>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const toggleLinks = document.querySelectorAll(".toggle-link");
+                toggleLinks.forEach(link => {
+                    link.addEventListener("click", function (event) {
+                        event.preventDefault();
+                        const target = document.getElementById(this.dataset.target);
+                        if (target.style.display === "none" || target.style.display === "") {
+                            target.style.display = "block";
+                        } else {
+                            target.style.display = "none";
+                        }
+                    });
+                });
+
+                const closeAllButton = document.getElementById("close-all");
+                closeAllButton.addEventListener("click", function () {
+                    const allContents = document.querySelectorAll(".toggle-content");
+                    allContents.forEach(content => {
+                        content.style.display = "none";
+                    });
+                });
+            });
+        </script>
+</body>
+
+</html>
